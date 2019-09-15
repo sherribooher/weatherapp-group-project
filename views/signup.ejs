@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <header class="v-header-container">
+      <div class="fullscreen-video-wrap">
+        <video
+          src="../styles/img/Snow_19___30s___4k_res.mp4"
+          type="type/mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+      </div>
+    </header>
+    <form action="/signup" method="POST">
+      <div class="signup-page-container">
+        <div class="header-title">
+          <h1>Create Account</h1>
+        </div>
+        <div class="signup-form-container">
+          <div class="first-name input-div">
+            <label>First Name</label>
+            <br />
+            <input type="text" name="firstName" />
+          </div>
+          <div class="last-name input-div">
+            <label>Last Name</label>
+            <br />
+            <input type="text" name="lastName" />
+          </div>
+          <div class="email-form input-div">
+            <label>Email</label>
+            <br />
+            <input type="email" name="email" />
+          </div>
+          <div class="password-form input-div">
+            <label>Password</label>
+            <br />
+            <input type="password" name="password" />
+          </div>
+          <div class="user-preference-input">
+            <div class="location-form input-div">
+              <label for="">Location</label>
+              <input type="text" / placeholder="City, State" name="location">
+            </div>
+          </div>
+          <div class="creation-signin-btn">
+            <button class="submit-btn-account" type="submit">
+              Create Account
+            </button>
+            <p>Have an account? <a href="/signin">Login Now!</a></p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <header class="v-header-container">
+      <div class="fullscreen-video-wrap">
+        <video
+          src="../styles/img/Snow_19___30s___4k_res.mp4"
+          type="type/mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+      </div>
+    </header>
+
+    <form action="/signin" method="POST">
+      <div class="signup-page-container signin-page">
+        <div class="header-title signin-title">
+          <h1>Welcome to Weather or Not</h1>
+        </div>
+        <div class="signup-form-container signin-form-page">
+          <div class="email-form input-div signin-email">
+            <label>Email</label>
+            <br />
+            <input type="email" name="email" />
+          </div>
+          <div class="password-form input-div signin-pass">
+            <label>Password</label>
+            <br />
+            <input type="password" name="password" />
+          </div>
+
+          <div class="creation-signin-btn">
+            <button class="submit-btn-account" type="submit">Login</button>
+            <p>Don't have an account? <a href="/signup">Create one Now!</a></p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

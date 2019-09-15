@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #0a1a2a;
+}
+
+.container-whole-page {
+  background-color: #0a1a2a;
+  width: 100vw;
+  min-height: 140vh;
+}
+
+.dashboard-container {
+  background-color: #050d15;
+  position: relative;
+  top: 25px;
+  left: 30px;
+  width: 95vw;
+  min-height: 110vh;
+  -webkit-box-shadow: -2px 3px 16px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 3px 16px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 3px 16px 4px rgba(0, 0, 0, 0.75);
+  display: flex;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.side-bar-container {
+  min-width: 60px;
+  background: #011831;
+}
+
+.main-dash {
+  width: 100%;
+  background-color: #000d1b;
+  -webkit-box-shadow: -5px 1px 34px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -5px 1px 34px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: -5px 1px 34px -14px rgba(0, 0, 0, 0.75);
+}
+
+.top-header-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  font-size: 1.6rem;
+  background: #000d1b;
+}
+.name-intro {
+  background: #000d1b;
+  color: #c0c0c0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.home-icon,
+.profile-icon {
+  background: #011831;
+  height: 30px;
+  text-align: center;
+  padding: 20px 0 30px 0;
+}
+.home-icon i,
+.profile-icon i {
+  background: #011831;
+  font-size: 1.4rem;
+  color: #c0c0c0;
+}
+.home-icon i:hover,
+.profile-icon i:hover {
+  color: #ececec;
+  transition: 0.3s;
+}
+
+/* Weather card & container */
+
+.weather-cards {
+  margin: 50px 50px 10px 50px;
+  background: #000d1b;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.weather-card {
+  width: 200px;
+  min-height: 400px;
+  border-radius: 20px;
+
+  -webkit-box-shadow: -2px 3px 16px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 3px 16px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 3px 16px 4px rgba(0, 0, 0, 0.75);
+}
+.background-weather {
+  background: black;
+}
+
+.cityname {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  text-align: center;
+  font-size: 2rem;
+  color: #000;
+  height: 75px;
+  background: url(../styles/img/Clouds.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: transparent;
+}
+
+.weather-card h4 {
+  font-size: 1.3rem;
+  margin-top: 15px;
+  text-align: center;
+  color: #ececec;
+}
+.temperature {
+  font-size: 1.3rem;
+  margin-top: 15px;
+  text-align: center;
+  color: #ececec;
+}
+.today-date {
+  font-size: 1.3rem;
+  margin-top: 15px;
+  text-align: center;
+  color: #ececec;
+}
+.today-hum {
+  font-size: 1rem;
+  margin-top: 15px;
+  text-align: center;
+  color: #ececec;
+}
+.today-min {
+  font-size: 1rem;
+  margin-top: 15px;
+  text-align: center;
+  color: #ececec;
+}
+.today-max {
+  font-size: 1rem;
+  margin-top: 15px;
+  text-align: center;
+  color: #ececec;
+}
+
+.button-container {
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.see-more,
+.removal {
+  height: 30px;
+  background: #ececec;
+  color: #000;
+  font-weight: 600;
+  box-shadow: inset 5px 5px 10px 2px #888888;
+  border-radius: 10px;
+  border: none;
+  margin: 5px 0;
+  position: relative;
+  bottom: 0;
+}
+
+.see-more {
+  font-size: 1.4rem;
+  width: 150px;
+}
+
+.removal {
+  font-size: 1rem;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.search-weather-loc {
+  background: #000d1b;
+  text-align: center;
+}
+.search-weather-loc form {
+  background: #000d1b;
+}
+.search-bar {
+  color: #ececec;
+  font-size: 1.2rem;
+  width: 400px;
+  padding: 2px 2px;
+}
+.search-bar::placeholder {
+  color: #ececec;
+}
+
+.search-btn {
+  padding: 1px 5px;
+  font-size: 1.2rem;
+  color: #ececec;
+}
+
+.logout {
+  text-align: right;
+  margin-right: 50px;
+  margin-top: 5px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.logout a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+}
+.logout a:hover {
+  color: #ececec;
+}
+
+@media all and (min-width: 974px) and (max-width: 1200px) {
+  .weather-cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 973px) {
+  .weather-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .weather-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .weather-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .weather-card {
+    width: 150px;
+    min-height: 350px;
+    border-radius: 20px;
+  }
+}

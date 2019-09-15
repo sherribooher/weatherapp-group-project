@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Livvic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+body {
+  /* background: url(../img/treesunny.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 130%;
+}
+
+.fullscreen-video-wrap {
+  height: 100vh;
+}
+
+.v-header-container {
+  height: 150vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.signup-page-container {
+  display: grid;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.signup-form-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 100;
+  width: 600px;
+}
+
+.signin-page {
+  position: relative;
+  top: 80px;
+}
+
+.header-title {
+  font-size: 1rem;
+  background-color: white;
+  width: 600px;
+  font-family: "Nunito Sans", sans-serif;
+  z-index: 100;
+}
+
+.signin-title {
+}
+.header-title h1 {
+  text-align: center;
+}
+
+.input-div {
+  margin: 10px 0;
+}
+
+.input-div label {
+  font-size: 0.9rem;
+  margin-left: 20px;
+}
+
+.input-div input {
+  margin-left: 20px;
+  width: 80%;
+  height: 30px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid lightgrey;
+  font-size: 1rem;
+}
+
+.location-form {
+  display: grid;
+}
+.location-form input {
+  font-size: 0.9rem;
+}
+.location-form input {
+  width: 80%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  margin-top: 10px;
+}
+
+.submit-btn-account {
+  width: 60%;
+  height: 40px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1.2rem;
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  -moz-box-shadow: inset 0px 0px 15px 3px #23395e;
+  -webkit-box-shadow: inset 0px 0px 15px 3px #23395e;
+  box-shadow: inset 0px 0px 15px 3px #23395e;
+}
+
+.creation-signin-btn {
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .header-title {
+    font-size: 1rem;
+    background-color: white;
+    width: 500px;
+    font-family: "Nunito Sans", sans-serif;
+    z-index: 100;
+  }
+  .signup-form-container {
+    width: 500px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .header-title {
+    font-size: 1rem;
+    background-color: white;
+    width: 300px;
+    font-family: "Nunito Sans", sans-serif;
+    z-index: 100;
+  }
+  .signup-form-container {
+    width: 300px;
+  }
+}

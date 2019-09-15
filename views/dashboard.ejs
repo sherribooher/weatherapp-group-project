@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../styles/dashboard.css" />
+    
+    <script src="https://kit.fontawesome.com/7769157833.js"></script>
+    <script src="../weather.js"></script>
+  </head>
+  <body>
+    <div class="container-whole-page">
+        <div class="logout">
+            <a href="/signin">Logout</a>
+        </div>
+      <div class="dashboard-container">
+        <div class="side-bar-container">
+            <div class="home-icon"><a href="/dashboard"><i class="fas fa-home"></i></a></div>
+            <div class="profile-icon"><i class="fas fa-user-friends"></i></div>
+            </div>
+
+        <div class="main-dash">
+          <div class="top-header-intro">
+            <h4 class="name-intro">Welcome, <%= firstName %></h4>
+          </div>
+          <div class="search-weather-loc">
+              <form action="" id="search-form">
+                <input type="text" class="search-bar" placeholder="City, State">
+                <button class="search-btn">Check Weather</button>
+            </form>
+            </div>
+
+          <div class="weather-cards">
+              <div class="weather-card">
+                 <h3 class="cityname"><%= location %></h3>
+                 <h4 class="weather-main">Cloudy</h4>
+        
+                  <p class="temperature"> 75&degF</p>
+                  <p class="today-date">Slightly Cloudy</p>
+                  <p class="today-hum">Humidity: 76%</p>
+                  <p class="today-min">Min Temp: 70&degF</p>
+                  <p class="today-max">Max Temp: 76&degF</p>
+                  <div class="button-container">
+                  <button class="see-more">See More</button>
+                  <button class="removal">Removal</button>
+                </div>
+              </div>
+              
+             
+              </div>
+          </div>
+
+        </div>
+    </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+</html>
